@@ -27,6 +27,8 @@ function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
     response.data.main.temp
+    iconElement.innerHTML = `http://openweathermap.org/img/wn/10d@2x.png`;
+    
   );
 
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
@@ -82,5 +84,6 @@ searchForm.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+let iconElement = document.querySelector("#icon");
 
 searchCity("Brussels");
