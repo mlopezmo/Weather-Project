@@ -1,10 +1,9 @@
 body {
   font-family: arial, sans-serif;
-  background: radial-gradient(
-    circle at 1.5% 7.8%,
-    rgb(247, 179, 140) 0%,
-    rgb(229, 118, 127) 48.2%,
-    rgb(149, 83, 153) 100.2%
+  background: linear-gradient(
+    109.6deg,
+    rgb(185, 212, 242) 11.2%,
+    rgb(244, 210, 226) 100.3%
   );
 }
 
