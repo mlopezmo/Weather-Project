@@ -1,3 +1,5 @@
+//function for date
+
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
@@ -21,6 +23,18 @@ function formatDate(timestamp) {
   let day = days[date.getDay()];
   return `${day} ${hours}:${minutes}`;
 }
+
+function formatDay (timestamp) {
+let date = new Date (timestamp * 1000);
+let day = date.getDate();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  return days [day];
+)
+
+//function for forecast
+
+
+// function for temperature
 
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#temperature");
@@ -46,6 +60,8 @@ function displayTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
+//function for city
+
 function search(city) {
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
@@ -57,6 +73,8 @@ function handleSubmit(event) {
   let cityInputElement = document.querySelector("#city-input");
   search(cityInputElement.value);
 }
+
+//function for temperature
 
 function displayFahrenheitTemperature(event) {
   event.preventDefault();
