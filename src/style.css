@@ -97,3 +97,8 @@ li:first-letter {
 .weather-forecast-temperatures {
   font-size: 13px;
 }
+.spotify {
+  position: relative;
+  top: -10px;
+  left: 20px;
+}
