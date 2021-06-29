@@ -33,7 +33,11 @@ let day = date.getDate();
 
 //function for forecast
 
-
+function displayForecast (response){
+  let forecast = response.data.daily;
+  let forecast = document.querySelector ("#forecast");
+  let forecastHTML = `<div class="row">`;
+}
 // function for temperature
 
 function displayTemperature(response) {
