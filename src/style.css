@@ -98,7 +98,7 @@ li:first-letter {
   font-size: 13px;
 }
 .spotify {
-  position: relative;
-  top: -10px;
+  position: sticky;
+  top: 29px;
   left: 20px;
 }
